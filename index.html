@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Telex&display=swap" rel="stylesheet">
+    <style>   
+        .cont{
+            width: 50%;
+            height: 400px;
+            padding: 100px 50px 50px 50px;
+            background-color: rgba(0,0,0,0.3);
+            border: rgba(0,0,0,0.25);
+            border-radius: 3%;
+            position: absolute;
+            left: 20%;
+            top: 5%;
+        }
+
+        .btnText{
+            position: absolute;
+            top: 30px;
+            left: 5%;
+            
+        }
+
+        .inner-container{
+            height: 400px;;
+            width:100%;
+            border: rgba(0,0,0,0.25);
+            border-radius: 3%;
+            overflow:scroll;
+            transition: transform .2s; /* Animation */
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none;    /**/
+        }
+
+        .btn{
+            position: absolute;
+            top: 25px;
+
+        }
+
+        .inner-container::-webkit-scrollbar { /* WebKit */
+            width: 0;
+            height: 0;
+        }
+
+        .imagee{
+            transition: transform .2s;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .imagee:hover {
+                transform: scale(1.2);
+            }
+        }
+
+    </style>
+</head>
+<body style="background-color: rgb(195, 255, 235);">
+    <div class="cont">
+            <div class="btn" style="padding-top: 12px;">
+                <img height="25px" width="25px" src="back-btn.png" style="background-color: black;" alt="">
+            </div>
+            <div class="btn" style="  left: 35%;">
+                <h1 style="font-size: 20px; font-weight: 400; font-family: 'Telex', sans-serif; color: #FFFFFF;">Scroll to see the entire image</h1>
+            </div>
+        <div class="inner-container">
+            <img class="imagee" height="500px" width="800px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png" alt=""  > 
+        </div>
+    </div>
+</body>
+</html>
+
+
